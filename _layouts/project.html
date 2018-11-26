@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+<section class="intro">
+  <div class="wrap">
+    <h1>{{ page.title }}</h1>
+    <p>{{ page.subtitle }}</p>
+  </div>
+</section>
+
+<section class="single">
+  {{ page.content }}
+
+  <div class="gallery" data-columns="3">
+    {% for image in site.static_files %}
+      {% if image.path contains page.image_dir %}
+        <img src="{{ site.baseurl }}{{ image.path }}" alt="image"/>
+      {% endif %}
+    {% endfor %}
+  </div>
+</section>
+
