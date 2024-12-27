@@ -1,0 +1,13 @@
+:{$PORT} {
+	root * /usr/share/caddy
+	file_server
+	encode gzip
+	try_files {path} {path}/ /index.html
+
+	log {
+		output stdout
+		# Note: This format requires a plugin. See Dockerfile for details.
+		format transform "{common_log}"
+		level INFO
+	}
+}
