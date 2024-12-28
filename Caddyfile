@@ -12,4 +12,9 @@
 		format transform "{common_log}"
 		level INFO
 	}
+
+	header {
+		# Cache everything for 30 days
+		Cache-Control "public, max-age=2592000"
+	}
 }
