@@ -3,6 +3,7 @@
 	file_server
 	encode gzip
 
+	# Handle requests for HTML files without .html extension because the compiled site's links exclude the extension.
 	try_files {path}.html {path}
 
 	log {
