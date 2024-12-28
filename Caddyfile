@@ -3,8 +3,7 @@
 	file_server
 	encode gzip
 
-	# This would have been useful if this were a SPA but it's not.
-	# try_files {path} {path}/ /index.html
+	try_files {path}.html {path}
 
 	log {
 		output stdout
