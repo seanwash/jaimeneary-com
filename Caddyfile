@@ -13,8 +13,10 @@
 		level INFO
 	}
 
-	header {
-		# Cache everything for 30 days
-		Cache-Control "public, max-age=2592000"
+	route {
+		# 30 days
+		header Cache-Control max-age=2592000
+		# 1 year
+		header /assets/* Cache-Control max-age=31536000
 	}
 }
