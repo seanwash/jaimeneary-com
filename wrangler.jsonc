@@ -1,0 +1,7 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "jaime-neary-preview",
+  "account_id": "7be6e8d49a8bad9db6d03fa4056ff42f",
+  "compatibility_date": "2026-10-25",
+  "pages_build_output_dir": "./dist"
+}

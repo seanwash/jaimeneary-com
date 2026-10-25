@@ -1,0 +1,30 @@
+---
+import { getCollection, type CollectionEntry } from 'astro:content';
+import Page from '../layouts/Page.astro';
+
+export async function getStaticPaths() {
+  return (await getCollection('galleries')).map(gallery => ({ params: { slug: gallery.id }, props: { gallery } }));
+}
+interface Props { gallery: CollectionEntry<'galleries'>; }
+const { data } = Astro.props.gallery;
+---
+<Page>
+  <div class="content-area">
+    <main class="site-main">
+      <article class="post gh-article">
+        <header class="gh-article-header gh-canvas">
+          <figure class="gh-article-image"><img {...data.hero} /></figure>
+          <h1 class="gh-article-title">{data.title}</h1>
+        </header>
+        <div class="gh-content gh-canvas">
+          <p>{data.description}</p>
+          <figure class="kg-card kg-gallery-card kg-width-wide">
+            <div class="kg-gallery-container">
+              {data.rows.map(row => <div class="kg-gallery-row">{row.map(image => <div class="kg-gallery-image"><img {...image} /></div>)}</div>)}
+            </div>
+          </figure>
+        </div>
+      </article>
+    </main>
+  </div>
+</Page>

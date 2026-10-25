@@ -1,156 +1,43 @@
-# Board by JekyllThemes.io – Instructions
+# Jaime Neary portfolio
 
-If you have any questions or feedback about the theme, don't hesitate to reach out to hello@jekyllthemes.io for 1-to-1 support direct from the developers.
+An Astro 7 static photography portfolio for Cloudflare Pages. It requires Node 24 for development and builds, with no CMS or database at runtime.
 
----
+## Development
 
-## Getting started
+```sh
+npm ci
+npm run dev
+npm run check
+npm run build
+npm run preview
+```
 
-Copy the theme files to your website directory.
+`npm run build` runs only `astro build`. It uses local content and public assets, without contacting Ghost or running an importer. The generated `dist/` directory is the deployment artifact.
 
-To run the theme locally, navigate to the theme directory in your terminal and run `bundle install` to install the theme's dependencies. Then run `jekyll serve` to start the Jekyll server.
+## Editing content
 
----
+- Gallery records live in `src/content/galleries/*.json`, validated by `src/content.config.ts`. Each record contains its title, description, display order, date, cover images and photo rows. The file name determines its existing public URL.
+- The About text lives in `src/data/about.ts`, and its page layout is `src/pages/about.astro`.
+- Shared navigation, footer and metadata are in `src/layouts/Page.astro`. `src/data/metadata.json` preserves the captured canonical/social/structured metadata.
+- Images, responsive variants and the retained theme assets are in `public/`. Their existing paths and bytes are preserved.
+- Search, sitemap and RSS are normal Astro static endpoints under `src/pages/`. RSS uses `@astrojs/rss`; `src/data/feed.json` preserves existing feed identifiers and publication timestamps so subscribers do not receive duplicate entries after migration.
 
-## Jekyll basics
+The shared Astro components retain the Ghost theme's CSS classes and client-side lightbox behavior. These are static presentation assets and do not require a Ghost backend. Search uses the local Astro-generated index.
 
-If you're not familiar with how Jekyll works, check out [jekyllrb.com](https://jekyllrb.com/) for all the details, 
-or read up on just the basics of [front matter](https://jekyllrb.com/docs/frontmatter/), [writing posts](https://jekyllrb.com/docs/posts/), and [creating pages](https://jekyllrb.com/docs/pages/).
+## Cloudflare preview
 
----
+`wrangler.jsonc` points to `dist/` and defines no live-domain routes. The built output can be served locally:
 
-## Customizing the theme
+```sh
+npx wrangler pages dev dist --ip 127.0.0.1 --port 8791
+```
 
-Board comes packed with lots of options to let you customize the theme.
+The preview is excluded from indexing through HTML metadata, `public/_headers`, and `public/robots.txt`. Adjust all three deliberately before a live cutover while retaining noindex for preview hosts. `/rss/` redirects to the generated XML feed. Unmatched URLs serve the custom 404.
 
----
+Cloudflare Pages builds directly from `seanwash/jaimeneary-com`, using the repository root, Node 24, build command `npm run check && npm run build`, and output directory `dist`. The initial deployment branch is `astro-cloudflare`; the default branch remains unchanged. The lockfile pins Astro, its RSS integration and Wrangler. Pushes to the selected branch trigger automatic builds. No custom domain is configured for this preview.
 
-### The `_config.yml` file
+## Migration verification
 
-The main things you might need to change here are:
+Migration verification against the captured public site confirmed that all 13 regular pages retain their main text and image attributes, every archived asset matches its source hash, and existing RSS article identifiers/dates/links/titles are preserved. The extra generated page is the custom 404. Browser verification covers search results, lightbox navigation and mobile navigation.
 
-`site: Board Jekyll Theme` – change this to your website's name
-
-`paginate: 6` – change this to set the number of blog posts on each page
-
-You can also change more advanced things here like the path names, collections etc. You do not need to change any of these to achieve the same look as the demo, so best to leave everything else unless you are confident.
-
----
-
-### The `settings.yml` file
-
-You'll find this inside the `_data` folder – this is where you can set all of the theme options.
-
-**Basic settings**
-
-`site_title` – change this to your website's title. This shows up in the browser's title bar, and in the header and footer.
-`favicon_image` – change this to the location of your favicon image, which shows up in the browser's title bar.
-
-**Header settings**
-
-`logo_image` – if you'd like to use a logo instead of plain text title in your header, enter the link to it here.
-`logo_width` – set the width (in pixels) that your logo should appear at. This is useful for adding retina display support – for example if your original image is 400px wide, you could set this value to `200` to display a retina-ready image.
-
-**Menu settings**
-
-This allows you to set the links inside your menu. Add each one as a list item with a `title` and `url`. When hosting on GitHub Pages, make sure you leave a trailing `/` at the end of links to category pages (e.g. `/blog/` or `/projects/`).
-
-**Footer settings**
-
-`footer_tagline` – sets the text that dispays in the footer.
-
-**Grid settings**
-
-`overlay_opacity` – this sets the opacity of the overlay when you hover over grid items (portfolio and blog posts). Use a decimal value here, e.g. `0.8` will give you 80% opacity on hover.
-`grid_spacing` – this sets the amount of spacing (in pixels) between each item in the grid layout.
-`content_alignment` – this set the position of the post details when you hover: choose from `top`, `center` or `bottom`.
-
-**Contact settings**
-
-The theme comes with a pre-made contact form that you can use with [Formspree](https://formspree.io/), which is free for up to 50 submissions per month. Please read through their website for instructions on how to set up your contact form. You could also easily adapt it to use another contact form service.
-
-`form_action` – this is the action attribute that you get from FormSpree, for example `https://formspree.io/your@email.com`
-`confirmation_url` – by default the user is shown a default Formspree thank you page. You can use this setting to provide an alternative URL for that page, for example `/thanks` – we have included a basic thank you page with the theme.
-`email_subject` – choose the subject of the email you receive from Formspree.
-`send_button_text` – change the text used on the form submit button.
-
-Hint: you can add the contact form to any page of your site using the include – `{% include contact-form.html %}` – for example if you wanted to have the contact form on your About page.
-
-**Social settings**
-
-Here you can add links to your profiles on social networks, and they'll be shown in the footer. Simply add your URL next to the ones you want to show.
-
-**Color settings**
-
-Here you can set all the different colors used by the theme. Try them out and find the color pallette that works for you!
-
-**Font settings**
-
-`font_embed` – add an embed code from an external font service. This allows you to use services like Google Fonts or Typekit.
-`title_font` – set the CSS name for the font used on titles.
-`body_font` – set the CSS anme for the font used for body text.
-`regular_weight` – set the font weight for regular styled text.
-`bold_weight` – set the font weight for bold styled text.
-
-Below these options, you'll see options for each typographical element used in the theme. For each, you can set the following options:
-
-`small_size` – the size (in pixels) used for this element on small size screens like mobile phones.
-`medium_size` – the size (in pixels) used for this element on medium size screens like tablets.
-`large_size` – the size (in pixels) used for this element on largers screens like laptops and desktops.
-`weight` – the font weight for this element.
-`letter_spacing` – the letter spacing (in ems) for this element.
-`line_height` – the line-height (in decimals) for this element.
-
-**Advanced options**
-
-`ajax_loading` – use `true` to enable Ajax loading throughout your site. Use `false` to disable it and load pages normally – this can be helpful if you're adding plugins or other javascript to your pages.
-`analytics_code` – use this option to add your Google Analytics code.
-`custom_styles` – use this option to add custom CSS styles to the theme.
-`header_js` – use this option to insert javascript into the header of the page.
-`footer_js` – use this option to insert javascript at the end of the page.
-
----
-
-### Images
-
-Inside the `/images/` folder you'll find a few images included with the theme.
-
-The images in the `/demo/` subfolder are used in the demo project, post and page – you delete those if you don't need them.
-
-`favicon.png` – you should replace this with the favicon image you'd like to use for your website.
-
-`social.jpg` – this image is used by default as the meta image on the Home and Blog pages. This shows up on social shares of your page, for example Facebook or Twitter – so you should change it to a relevant image, or change the image URL in that page's Front Matter (see below).
-
----
-
-## Main pages
-
-The theme comes with some pages set up ready for your content.
-
-### The home page – `/index.html`
-
-This is your website home page. You can edit some details in the Front Matter at the top of the page:
-
-`title` – this sets the page title, which shows up in the browser's title bar and on search engine results, social shares etc.
-`description` – this sets the page meta description, which shows up on search engine results, social shares etc.
-`featured_image` – this sets the page meta image, which shows up on social shares.
-
-### The blog page – `/blog/index.html`
-
-This is the blog listing page, which shows all your blog posts. You can edit the same things as on the home page to customise it for your website.
-
----
-
-## Projects, posts and pages
-
-These control the main content of your website, and are found inside the `_projects`, `_posts` and `_pages` folders.
-
-Take a look at the demo content inside each folder for full descriptions on what you can do inside these, and to use as a template for your own content.
-
----
-
-## Any questions?
-
-If you have any questions or feedback about the theme, don't hesitate to reach out to hello@jekyllthemes.io for 1-to-1 support direct from the developers!
-
-🤘
+The public capture is retained separately as migration provenance and is not a build dependency. A complete Ghost database/content, theme and media backup is still required before retiring the original service. This configuration has no live-domain routes.

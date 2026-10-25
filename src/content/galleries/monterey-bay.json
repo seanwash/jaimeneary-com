@@ -1,0 +1,294 @@
+{
+  "title": "Monterey Bay",
+  "description": "...and surrounding areas! Carmel to Santa Cruz there's all sorts of things to see from land!",
+  "order": 3,
+  "date": "2024-12-28",
+  "hero": {
+    "srcset": "/content/images/size/w300/2024/12/DSCN1845-medium_large.2x.1440388867-2.JPG 300w,\n                    /content/images/size/w750/2024/12/DSCN1845-medium_large.2x.1440388867-2.JPG 750w,\n                    /content/images/size/w1140/2024/12/DSCN1845-medium_large.2x.1440388867-2.JPG 1140w,\n                    /content/images/size/w1920/2024/12/DSCN1845-medium_large.2x.1440388867-2.JPG 1920w",
+    "sizes": "(min-width: 1170px) 1140px, calc(100vw - 30px)",
+    "src": "/content/images/size/w1140/2024/12/DSCN1845-medium_large.2x.1440388867-2.JPG",
+    "alt": "Monterey Bay"
+  },
+  "thumbnail": {
+    "class": "post-image",
+    "srcset": "/content/images/size/w300/2024/12/DSCN1845-medium_large.2x.1440388867-2.JPG 300w,\n                    /content/images/size/w750/2024/12/DSCN1845-medium_large.2x.1440388867-2.JPG 750w,\n                    /content/images/size/w1140/2024/12/DSCN1845-medium_large.2x.1440388867-2.JPG 1140w,\n                    /content/images/size/w1920/2024/12/DSCN1845-medium_large.2x.1440388867-2.JPG 1920w",
+    "sizes": "(min-width: 1020px) 300px, (min-width: 641px) calc((100vw - 50px) / 3), calc((100vw - 40px) / 2)",
+    "src": "/content/images/size/w300/2024/12/DSCN1845-medium_large.2x.1440388867-2.JPG",
+    "alt": "Monterey Bay"
+  },
+  "fullImage": "/content/images/2024/12/DSCN1845-medium_large.2x.1440388867-2.JPG",
+  "rows": [
+    [
+      {
+        "src": "/content/images/2024/12/CIMG3445-medium_large.2x.1440297460-1.jpg",
+        "width": "1600",
+        "height": "1200",
+        "loading": "lazy",
+        "alt": "",
+        "srcset": "/content/images/size/w600/2024/12/CIMG3445-medium_large.2x.1440297460-1.jpg 600w, /content/images/size/w1000/2024/12/CIMG3445-medium_large.2x.1440297460-1.jpg 1000w, /content/images/2024/12/CIMG3445-medium_large.2x.1440297460-1.jpg 1600w",
+        "sizes": "(min-width: 720px) 720px"
+      },
+      {
+        "src": "/content/images/2024/12/D7K-1153-medium_large.2x.1440551302.jpg",
+        "width": "1600",
+        "height": "1060",
+        "loading": "lazy",
+        "alt": "",
+        "srcset": "/content/images/size/w600/2024/12/D7K-1153-medium_large.2x.1440551302.jpg 600w, /content/images/size/w1000/2024/12/D7K-1153-medium_large.2x.1440551302.jpg 1000w, /content/images/2024/12/D7K-1153-medium_large.2x.1440551302.jpg 1600w",
+        "sizes": "(min-width: 720px) 720px"
+      },
+      {
+        "src": "/content/images/2024/12/D7K-2453-medium_large.2x.1440552049.jpg",
+        "width": "1060",
+        "height": "1600",
+        "loading": "lazy",
+        "alt": "",
+        "srcset": "/content/images/size/w600/2024/12/D7K-2453-medium_large.2x.1440552049.jpg 600w, /content/images/size/w1000/2024/12/D7K-2453-medium_large.2x.1440552049.jpg 1000w, /content/images/2024/12/D7K-2453-medium_large.2x.1440552049.jpg 1060w",
+        "sizes": "(min-width: 720px) 720px"
+      }
+    ],
+    [
+      {
+        "src": "/content/images/2024/12/D7K-2468-medium_large.2x.1440552060.jpg",
+        "width": "1600",
+        "height": "1060",
+        "loading": "lazy",
+        "alt": "",
+        "srcset": "/content/images/size/w600/2024/12/D7K-2468-medium_large.2x.1440552060.jpg 600w, /content/images/size/w1000/2024/12/D7K-2468-medium_large.2x.1440552060.jpg 1000w, /content/images/2024/12/D7K-2468-medium_large.2x.1440552060.jpg 1600w",
+        "sizes": "(min-width: 720px) 720px"
+      },
+      {
+        "src": "/content/images/2024/12/D7K-2469-medium_large.2x.1440552073.jpg",
+        "width": "1600",
+        "height": "1060",
+        "loading": "lazy",
+        "alt": "",
+        "srcset": "/content/images/size/w600/2024/12/D7K-2469-medium_large.2x.1440552073.jpg 600w, /content/images/size/w1000/2024/12/D7K-2469-medium_large.2x.1440552073.jpg 1000w, /content/images/2024/12/D7K-2469-medium_large.2x.1440552073.jpg 1600w",
+        "sizes": "(min-width: 720px) 720px"
+      },
+      {
+        "src": "/content/images/2024/12/D7K-2494-medium_large.2x.1440552118.jpg",
+        "width": "1060",
+        "height": "1600",
+        "loading": "lazy",
+        "alt": "",
+        "srcset": "/content/images/size/w600/2024/12/D7K-2494-medium_large.2x.1440552118.jpg 600w, /content/images/size/w1000/2024/12/D7K-2494-medium_large.2x.1440552118.jpg 1000w, /content/images/2024/12/D7K-2494-medium_large.2x.1440552118.jpg 1060w",
+        "sizes": "(min-width: 720px) 720px"
+      }
+    ],
+    [
+      {
+        "src": "/content/images/2024/12/D7K-2521-medium_large.2x.1440552156.jpg",
+        "width": "1600",
+        "height": "1060",
+        "loading": "lazy",
+        "alt": "",
+        "srcset": "/content/images/size/w600/2024/12/D7K-2521-medium_large.2x.1440552156.jpg 600w, /content/images/size/w1000/2024/12/D7K-2521-medium_large.2x.1440552156.jpg 1000w, /content/images/2024/12/D7K-2521-medium_large.2x.1440552156.jpg 1600w",
+        "sizes": "(min-width: 720px) 720px"
+      },
+      {
+        "src": "/content/images/2024/12/D7K-2525-medium_large.2x.1440552171.jpg",
+        "width": "1060",
+        "height": "1600",
+        "loading": "lazy",
+        "alt": "",
+        "srcset": "/content/images/size/w600/2024/12/D7K-2525-medium_large.2x.1440552171.jpg 600w, /content/images/size/w1000/2024/12/D7K-2525-medium_large.2x.1440552171.jpg 1000w, /content/images/2024/12/D7K-2525-medium_large.2x.1440552171.jpg 1060w",
+        "sizes": "(min-width: 720px) 720px"
+      },
+      {
+        "src": "/content/images/2024/12/D7K-2536-medium_large.2x.1440552192.jpg",
+        "width": "1600",
+        "height": "1060",
+        "loading": "lazy",
+        "alt": "",
+        "srcset": "/content/images/size/w600/2024/12/D7K-2536-medium_large.2x.1440552192.jpg 600w, /content/images/size/w1000/2024/12/D7K-2536-medium_large.2x.1440552192.jpg 1000w, /content/images/2024/12/D7K-2536-medium_large.2x.1440552192.jpg 1600w",
+        "sizes": "(min-width: 720px) 720px"
+      }
+    ],
+    [
+      {
+        "src": "/content/images/2024/12/D7K-2656-medium_large.2x.1440552269.jpg",
+        "width": "1600",
+        "height": "1060",
+        "loading": "lazy",
+        "alt": "",
+        "srcset": "/content/images/size/w600/2024/12/D7K-2656-medium_large.2x.1440552269.jpg 600w, /content/images/size/w1000/2024/12/D7K-2656-medium_large.2x.1440552269.jpg 1000w, /content/images/2024/12/D7K-2656-medium_large.2x.1440552269.jpg 1600w",
+        "sizes": "(min-width: 720px) 720px"
+      },
+      {
+        "src": "/content/images/2024/12/D7K-2657-medium_large.2x.1440552288.jpg",
+        "width": "1600",
+        "height": "1060",
+        "loading": "lazy",
+        "alt": "",
+        "srcset": "/content/images/size/w600/2024/12/D7K-2657-medium_large.2x.1440552288.jpg 600w, /content/images/size/w1000/2024/12/D7K-2657-medium_large.2x.1440552288.jpg 1000w, /content/images/2024/12/D7K-2657-medium_large.2x.1440552288.jpg 1600w",
+        "sizes": "(min-width: 720px) 720px"
+      },
+      {
+        "src": "/content/images/2024/12/D7K-2942-medium_large.2x.1440552420.jpg",
+        "width": "1060",
+        "height": "1600",
+        "loading": "lazy",
+        "alt": "",
+        "srcset": "/content/images/size/w600/2024/12/D7K-2942-medium_large.2x.1440552420.jpg 600w, /content/images/size/w1000/2024/12/D7K-2942-medium_large.2x.1440552420.jpg 1000w, /content/images/2024/12/D7K-2942-medium_large.2x.1440552420.jpg 1060w",
+        "sizes": "(min-width: 720px) 720px"
+      }
+    ],
+    [
+      {
+        "src": "/content/images/2024/12/D7K-2999-medium_large.2x.1440552470.jpg",
+        "width": "1060",
+        "height": "1600",
+        "loading": "lazy",
+        "alt": "",
+        "srcset": "/content/images/size/w600/2024/12/D7K-2999-medium_large.2x.1440552470.jpg 600w, /content/images/size/w1000/2024/12/D7K-2999-medium_large.2x.1440552470.jpg 1000w, /content/images/2024/12/D7K-2999-medium_large.2x.1440552470.jpg 1060w",
+        "sizes": "(min-width: 720px) 720px"
+      },
+      {
+        "src": "/content/images/2024/12/D7K-3020-medium_large.2x.1440552482.jpg",
+        "width": "1060",
+        "height": "1600",
+        "loading": "lazy",
+        "alt": "",
+        "srcset": "/content/images/size/w600/2024/12/D7K-3020-medium_large.2x.1440552482.jpg 600w, /content/images/size/w1000/2024/12/D7K-3020-medium_large.2x.1440552482.jpg 1000w, /content/images/2024/12/D7K-3020-medium_large.2x.1440552482.jpg 1060w",
+        "sizes": "(min-width: 720px) 720px"
+      },
+      {
+        "src": "/content/images/2024/12/D7K-3026-medium_large.2x.1440552489.jpg",
+        "width": "1060",
+        "height": "1600",
+        "loading": "lazy",
+        "alt": "",
+        "srcset": "/content/images/size/w600/2024/12/D7K-3026-medium_large.2x.1440552489.jpg 600w, /content/images/size/w1000/2024/12/D7K-3026-medium_large.2x.1440552489.jpg 1000w, /content/images/2024/12/D7K-3026-medium_large.2x.1440552489.jpg 1060w",
+        "sizes": "(min-width: 720px) 720px"
+      }
+    ],
+    [
+      {
+        "src": "/content/images/2024/12/D7K-3075-medium_large.2x.1440552551.jpg",
+        "width": "1600",
+        "height": "1060",
+        "loading": "lazy",
+        "alt": "",
+        "srcset": "/content/images/size/w600/2024/12/D7K-3075-medium_large.2x.1440552551.jpg 600w, /content/images/size/w1000/2024/12/D7K-3075-medium_large.2x.1440552551.jpg 1000w, /content/images/2024/12/D7K-3075-medium_large.2x.1440552551.jpg 1600w",
+        "sizes": "(min-width: 720px) 720px"
+      },
+      {
+        "src": "/content/images/2024/12/D7K-3114-medium_large.2x.1440552618.jpg",
+        "width": "1600",
+        "height": "1060",
+        "loading": "lazy",
+        "alt": "",
+        "srcset": "/content/images/size/w600/2024/12/D7K-3114-medium_large.2x.1440552618.jpg 600w, /content/images/size/w1000/2024/12/D7K-3114-medium_large.2x.1440552618.jpg 1000w, /content/images/2024/12/D7K-3114-medium_large.2x.1440552618.jpg 1600w",
+        "sizes": "(min-width: 720px) 720px"
+      },
+      {
+        "src": "/content/images/2024/12/D7K-3121-medium_large.2x.1440552648.jpg",
+        "width": "1060",
+        "height": "1600",
+        "loading": "lazy",
+        "alt": "",
+        "srcset": "/content/images/size/w600/2024/12/D7K-3121-medium_large.2x.1440552648.jpg 600w, /content/images/size/w1000/2024/12/D7K-3121-medium_large.2x.1440552648.jpg 1000w, /content/images/2024/12/D7K-3121-medium_large.2x.1440552648.jpg 1060w",
+        "sizes": "(min-width: 720px) 720px"
+      }
+    ],
+    [
+      {
+        "src": "/content/images/2024/12/D7K-3169-medium_large.2x.1440552710.jpg",
+        "width": "1600",
+        "height": "1060",
+        "loading": "lazy",
+        "alt": "",
+        "srcset": "/content/images/size/w600/2024/12/D7K-3169-medium_large.2x.1440552710.jpg 600w, /content/images/size/w1000/2024/12/D7K-3169-medium_large.2x.1440552710.jpg 1000w, /content/images/2024/12/D7K-3169-medium_large.2x.1440552710.jpg 1600w",
+        "sizes": "(min-width: 720px) 720px"
+      },
+      {
+        "src": "/content/images/2024/12/D7K-3180-medium_large.2x.1440552726.jpg",
+        "width": "1600",
+        "height": "1060",
+        "loading": "lazy",
+        "alt": "",
+        "srcset": "/content/images/size/w600/2024/12/D7K-3180-medium_large.2x.1440552726.jpg 600w, /content/images/size/w1000/2024/12/D7K-3180-medium_large.2x.1440552726.jpg 1000w, /content/images/2024/12/D7K-3180-medium_large.2x.1440552726.jpg 1600w",
+        "sizes": "(min-width: 720px) 720px"
+      },
+      {
+        "src": "/content/images/2024/12/D7K-3207-medium_large.2x.1440552743.jpg",
+        "width": "1600",
+        "height": "1060",
+        "loading": "lazy",
+        "alt": "",
+        "srcset": "/content/images/size/w600/2024/12/D7K-3207-medium_large.2x.1440552743.jpg 600w, /content/images/size/w1000/2024/12/D7K-3207-medium_large.2x.1440552743.jpg 1000w, /content/images/2024/12/D7K-3207-medium_large.2x.1440552743.jpg 1600w",
+        "sizes": "(min-width: 720px) 720px"
+      }
+    ],
+    [
+      {
+        "src": "/content/images/2024/12/D7K-3349-medium_large.2x.1440552783.jpg",
+        "width": "1600",
+        "height": "1060",
+        "loading": "lazy",
+        "alt": "",
+        "srcset": "/content/images/size/w600/2024/12/D7K-3349-medium_large.2x.1440552783.jpg 600w, /content/images/size/w1000/2024/12/D7K-3349-medium_large.2x.1440552783.jpg 1000w, /content/images/2024/12/D7K-3349-medium_large.2x.1440552783.jpg 1600w",
+        "sizes": "(min-width: 720px) 720px"
+      },
+      {
+        "src": "/content/images/2024/12/D7K-3355-medium_large.2x.1440552794.jpg",
+        "width": "1060",
+        "height": "1600",
+        "loading": "lazy",
+        "alt": "",
+        "srcset": "/content/images/size/w600/2024/12/D7K-3355-medium_large.2x.1440552794.jpg 600w, /content/images/size/w1000/2024/12/D7K-3355-medium_large.2x.1440552794.jpg 1000w, /content/images/2024/12/D7K-3355-medium_large.2x.1440552794.jpg 1060w",
+        "sizes": "(min-width: 720px) 720px"
+      },
+      {
+        "src": "/content/images/2024/12/D7K-3356-medium_large.2x.1440552812.jpg",
+        "width": "1060",
+        "height": "1600",
+        "loading": "lazy",
+        "alt": "",
+        "srcset": "/content/images/size/w600/2024/12/D7K-3356-medium_large.2x.1440552812.jpg 600w, /content/images/size/w1000/2024/12/D7K-3356-medium_large.2x.1440552812.jpg 1000w, /content/images/2024/12/D7K-3356-medium_large.2x.1440552812.jpg 1060w",
+        "sizes": "(min-width: 720px) 720px"
+      }
+    ],
+    [
+      {
+        "src": "/content/images/2024/12/D7K-3399-medium_large.2x.1440552831.jpg",
+        "width": "1060",
+        "height": "1600",
+        "loading": "lazy",
+        "alt": "",
+        "srcset": "/content/images/size/w600/2024/12/D7K-3399-medium_large.2x.1440552831.jpg 600w, /content/images/size/w1000/2024/12/D7K-3399-medium_large.2x.1440552831.jpg 1000w, /content/images/2024/12/D7K-3399-medium_large.2x.1440552831.jpg 1060w",
+        "sizes": "(min-width: 720px) 720px"
+      },
+      {
+        "src": "/content/images/2024/12/D7K-3410-medium_large.2x.1440552862.jpg",
+        "width": "1060",
+        "height": "1600",
+        "loading": "lazy",
+        "alt": "",
+        "srcset": "/content/images/size/w600/2024/12/D7K-3410-medium_large.2x.1440552862.jpg 600w, /content/images/size/w1000/2024/12/D7K-3410-medium_large.2x.1440552862.jpg 1000w, /content/images/2024/12/D7K-3410-medium_large.2x.1440552862.jpg 1060w",
+        "sizes": "(min-width: 720px) 720px"
+      },
+      {
+        "src": "/content/images/2024/12/D7K-6632-medium_large.2x.1440134623.jpg",
+        "width": "1600",
+        "height": "1060",
+        "loading": "lazy",
+        "alt": "",
+        "srcset": "/content/images/size/w600/2024/12/D7K-6632-medium_large.2x.1440134623.jpg 600w, /content/images/size/w1000/2024/12/D7K-6632-medium_large.2x.1440134623.jpg 1000w, /content/images/2024/12/D7K-6632-medium_large.2x.1440134623.jpg 1600w",
+        "sizes": "(min-width: 720px) 720px"
+      }
+    ],
+    [
+      {
+        "src": "/content/images/2024/12/DSCN1845-medium_large.2x.1440388867-1.JPG",
+        "width": "1600",
+        "height": "1200",
+        "loading": "lazy",
+        "alt": "",
+        "srcset": "/content/images/size/w600/2024/12/DSCN1845-medium_large.2x.1440388867-1.JPG 600w, /content/images/size/w1000/2024/12/DSCN1845-medium_large.2x.1440388867-1.JPG 1000w, /content/images/2024/12/DSCN1845-medium_large.2x.1440388867-1.JPG 1600w",
+        "sizes": "(min-width: 1200px) 1200px"
+      }
+    ]
+  ]
+}

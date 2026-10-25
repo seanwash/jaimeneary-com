@@ -1,0 +1,30 @@
+---
+import { getCollection } from 'astro:content';
+const galleries = (await getCollection('galleries')).sort((a, b) => a.data.order - b.data.order);
+---
+<main class="site-main">
+  <div class="post-feed gh-feed">
+    <div class="grid-item grid-sizer"></div>
+    {galleries.map(({ id, data }) => (
+      <div class="grid-item">
+        <figure class="post">
+          <a class="post-link" aria-label={`Navigate to ${data.title} page`} href={`/${id}/`}>
+            <img class="post-image" {...data.thumbnail} />
+          </a>
+          <a class="post-lightbox" aria-label="Expand image" href={data.fullImage}>
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="15 3 21 3 21 9" /><polyline points="9 21 3 21 3 15" /><line x1="21" y1="3" x2="14" y2="10" /><line x1="3" y1="21" x2="10" y2="14" />
+            </svg>
+          </a>
+          <figcaption class="post-caption">
+            <h2 class="post-caption-title">{data.title}</h2>
+            <div class="post-caption-meta">
+              <span class="post-caption-meta-item post-caption-meta-date"><time datetime={data.date}>{new Intl.DateTimeFormat('en-GB', {day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC'}).format(new Date(data.date))}</time></span>
+              <span class="post-caption-meta-item post-caption-meta-link"><a href={`/${id}/`}>View project</a></span>
+            </div>
+          </figcaption>
+        </figure>
+      </div>
+    ))}
+  </div>
+</main>

@@ -1,0 +1,23 @@
+---
+import Page from '../layouts/Page.astro';
+import { aboutText } from '../data/about';
+---
+<Page bodyClass="page-template page-about">
+  <div class="content-area">
+    <main class="site-main">
+      <article class="post gh-article">
+        <header class="gh-article-header gh-canvas">
+          <figure class="gh-article-image">
+            <img src="/content/images/size/w1140/2024/12/photo-about.png" srcset="/content/images/size/w300/2024/12/photo-about.png 300w, /content/images/size/w750/2024/12/photo-about.png 750w, /content/images/size/w1140/2024/12/photo-about.png 1140w, /content/images/size/w1920/2024/12/photo-about.png 1920w" sizes="(min-width: 1170px) 1140px, calc(100vw - 30px)" alt="About me" />
+          </figure>
+          <h1 class="gh-article-title">About me</h1>
+        </header>
+        <div class="gh-content gh-canvas">
+          <p>{aboutText}</p>
+          <p>Photography Awards:</p>
+          <p><a href="http://www.redlandsdailyfacts.com/general-news/20111226/redlands-woman-places-second-in-photo-competition?ref=jaimeneary.com" rel="noreferrer">2011</a></p>
+        </div>
+      </article>
+    </main>
+  </div>
+</Page>
